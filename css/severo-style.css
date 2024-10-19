@@ -1,0 +1,205 @@
+/* Tipografia Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #f2f2f2; /* Texto em um branco suave */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+}
+
+header .logo {
+    width: 180px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    color: #f2f2f2;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #aaa;
+}
+
+/* Seções */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #1a1a1a; /* Fundo de cada seção */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #f2f2f2;
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lista de Cardápio */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #333;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: #f2f2f2;
+}
+
+ul li:hover {
+    background-color: #444;
+}
+
+/* Botão de WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebc5a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #777;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #444;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .whatsapp-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+.menu-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.menu-images a {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.menu-images a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.menu-images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 30px; /* Menor padding no cabeçalho em telas menores */
+    }
+
+    .menu-images {
+        flex-direction: column; /* Empilha as imagens em coluna */
+        align-items: center; /* Centraliza as imagens */
+    }
+
+    .menu-image {
+        width: 90%; /* Aumenta a largura das imagens para caber na tela */
+        margin-bottom: 15px; /* Espaço entre as imagens */
+    }
+
+    h1 {
+        font-size: 28px; /* Tamanho da fonte do título */
+    }
+
+    h2 {
+        font-size: 22px; /* Tamanho da fonte dos subtítulos */
+    }
+
+    .whatsapp-button {
+        width: 100%; /* Faz o botão ocupar 100% da largura */
+        padding: 15px; /* Aumenta o padding para dispositivos móveis */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .whatsapp-button {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+/* Estilo do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    padding: 15px; /* Aumentar o padding para um melhor visual */
+    background: #333; /* Um tom mais escuro que o cabeçalho */
+    color: white; /* Cor do texto no footer */
+    position: relative; /* Posição do footer */
+    bottom: 0; /* Fixa o footer na parte inferior */
+    width: 100%; /* Largura total do footer */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Sombra para o footer */
+    clear: both; /* Certifique-se que o rodapé não está se sobrepondo ao conteúdo acima */
+}
