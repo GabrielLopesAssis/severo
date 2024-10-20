@@ -172,8 +172,8 @@ footer p {
     }
 
     .whatsapp-button {
-        width: 100%; /* Faz o botão ocupar 100% da largura */
-        padding: 15px; /* Aumenta o padding para dispositivos móveis */
+        width: auto; /* Ajuste para evitar que o botão ocupe 100% da largura */
+        text-align: center;
     }
 }
 
